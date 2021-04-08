@@ -26,7 +26,6 @@ jobs:
         npm cache clean --force
         rm -rf package-lock.json
         npm install -g create-react-app@latest
-        chmod -R a+rwx ./node_modules 
         CI=false npm run build
 
     - name: Upload artifact for deployment job
