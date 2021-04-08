@@ -24,7 +24,6 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm cache clean --force
-        rm -rf node_modules
         rm -rf package-lock.json
         npm install -g create-react-app@latest
         chmod -R a+rwx ./node_modules 
