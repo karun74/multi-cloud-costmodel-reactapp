@@ -29,7 +29,6 @@ jobs:
         npm install
         chmod -R a+rwx ./node_modules 
         CI=false npm run build
-        
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v2
